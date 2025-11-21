@@ -1,0 +1,56 @@
+#postal-container {
+    position: fixed;
+    top: calc(100vh - 70px); /* Bajado 50px más */
+    right: calc(100vw - 400px); /* Mantiene distancia fija desde la derecha */
+    z-index: 1000;
+    display: none;
+}
+
+#postal-display {
+    background: #ee1c3e;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px 15px; /* Volvemos a padding fijo para consistencia */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px; /* Tamaño fijo para consistencia */
+    font-weight: bold;
+    text-align: center;
+    min-width: 60px; /* Ancho fijo para consistencia */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+}
+
+#postal-number {
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+/* Media queries para ajustes menores en pantallas muy pequeñas */
+@media screen and (max-width: 1366px) {
+    #postal-container {
+        top: calc(100vh - 130px); /* Bajado 50px más */
+        right: calc(100vw - 350px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #postal-container {
+        top: calc(100vh - 110px); /* Bajado 50px más */
+        right: calc(100vw - 300px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #postal-container {
+        top: calc(100vh - 90px); /* Bajado 50px más */
+        right: calc(100vw - 250px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #postal-container {
+        top: calc(100vh - 70px); /* Bajado 50px más */
+        right: calc(100vw - 200px);
+    }
+}
